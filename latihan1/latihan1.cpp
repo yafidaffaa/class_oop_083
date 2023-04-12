@@ -4,7 +4,7 @@ using namespace std;
 class mahasiswa {
 private :
 	double nim;
-	char nama[20];
+	string nama;
 	float nilai;
 public :
 	void input() {
