@@ -4,14 +4,14 @@ using namespace std;
 class mahasiswa {
 private :
 	double nim;
-	string nama;
+	char nama[20];
 	float nilai;
 public :
 	void input() {
 		cout << "Masukan NIM : ";
 		cin >> nim;
 		cout << "Masukan Nama : ";
-		cin >> nama;
+		cin.getline(nama,20);
 		cout << "Masukan Nilai : ";
 		cin >> nilai;
 	}
