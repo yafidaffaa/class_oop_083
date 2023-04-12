@@ -29,14 +29,15 @@ void mahasiswa::printData() {
 class mataKuliah {
 private :
 	string kode;
-	string namaMK;
+	char namaMK[20];
 	int sks;
 public :
 	void inputMK() {
 		cout << "\n\nMasukan kode matakuliah : ";
 		cin >> kode;
+		cin.ignore(1, '\n');
 		cout << "Masukan nama matakuliah : ";
-		cin >> namaMK;
+		cin.getline(namaMK,20);
 		cout << "Masukan SKS : ";
 		cin >> sks;
 	}
