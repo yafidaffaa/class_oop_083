@@ -10,7 +10,6 @@ public :
 	void input() {
 		cout << "Masukan NIM : ";
 		cin >> nim;
-		cin.ignore(1, '\n');
 		cout << "Masukan Nama : ";
 		cin.getline(nama,20);
 		cout << "Masukan Nilai : ";
